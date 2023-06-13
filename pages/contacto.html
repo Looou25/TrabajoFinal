@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/estilo.css" />
+    <title>Contacto</title>
+</head>
+<body>
+         <!--SECCION INICIO-->
+  <section id="inicio">
+    <header>
+      <div class="contenido-header">
+        <div class="logo">
+          <h1>BONAPETIT</h1>
+        </div>
+
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="../index.html" onclick="seleccionar()">
+                <i class="fa-solid fa-house"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
+             <!-- 
+            <li>
+              <a href="#menu">
+                <i class="fa-solid fa-book"></i>
+                <span> Menú</span>
+              </a>
+            </li>
+            <li>
+              <a href="#galeria">
+                <i class="fa-solid fa-image"></i>
+
+                <span>Galeria</span>
+              </a>
+            </li>-->
+            <li>
+              <a href="about.html " onclick="seleccionar()">
+                <i class="fa-solid fa-comment"></i>
+                <span>Sobre Nosotros</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="nav-responsive" id="bar" onclick="mostrarOcultar()" >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+  </section>
+      <!--SECCION CONTACTO-->
+  <section id="contacto">
+    <div class="info-form">
+      <h2>Contactanos</h2>
+      <p> Horarios <br>
+        08:00 - 00:00 Lunes - Jueves <br>
+        08:00 - 01:00 Viernes & Sábado <br>
+        08:00 - 00:00 Domingo</p>
+      <a href="#"><i class="fa-solid fa-phone"></i> 867-5309 </a>
+      <a href="#"><i class="fa-solid fa-envelope"></i> bon.apetit@correo.com </a>
+      <a href="#"><i class="fa-solid fa-map-location-dot"></i> Buenos Aires, Argentina </a>
+    </div>
+    <form action="#" autocomplete="off">
+      <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+      <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
+      <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+      <input type="submit" name="enviar" value="Enviar" class="btn-enviar">
+    </form>
+  </section>
+  <section id="encuentranos">
+    <h2>Estamos por aquí</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6722702.630550076!2d-67.81948152500003!3d-34.64031419999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78650e61903%3A0xbedae009eb120d68!2sBon%20Appetit!5e0!3m2!1ses-419!2sar!4v1685247147490!5m2!1ses-419!2sar"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+   </section>
+     <!--F O O T E R-->
+  <footer>
+    <div class="pie">
+      <div class="logo">
+        <h1>BONAPETIT</h1>
+      </div>
+      <div class="redes">
+        <h2>Redes Sociales</h2>
+        <div class="links_redes">
+          <a class="links" href="#"> <i class="fa-brands fa-facebook icon"></i></a>
+          <a class="links" href="#"> <i class="fa-brands fa-instagram icon"></i></a>
+          <a class="links" href="#"> <i class="fa-brands fa-whatsapp icon"></i></a>
+          <a class="links" href="https://github.com/Looou25" target="_blank"> <i class="fa-brands fa-github icon"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>

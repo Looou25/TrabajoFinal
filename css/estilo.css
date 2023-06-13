@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@300&display=swap");
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/**H E A D E R**/
+#inicio {
+  display: flex;
+  flex-direction: column;
+}
+#inicio header {
+  width: 100%;
+  background-color: #2b2d42;
+}
+#inicio header .contenido-header {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  position: relative;
+}
+#inicio header .contenido-header nav {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+#inicio header .contenido-header .logo {
+  color: #feeafa;
+}
+#inicio header .contenido-header nav ul {
+  display: flex;
+  list-style: none;
+}
+#inicio header .contenido-header nav ul li {
+  text-align: center;
+}
+#inicio header .contenido-header nav ul li i {
+  display: block;
+  color: #8e9aaf;
+  margin: 0 20px;
+}
+#inicio header .contenido-header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #efd3d7;
+  margin: 0 20px;
+}
+.nav-responsive {
+  font-size: 25px;
+  color: #dee2ff;
+  display: none;
+}
+#inicio header .contenido-header nav ul li:hover i {
+  color: #cbc0d3;
+}
+#inicio header .contenido-header .social a {
+  display: inline-block;
+  background-color: #efd3d7;
+  text-decoration: none;
+  color: #8e9aaf;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+/**B A N N E R**/
+.banner{
+  width: 100%;
+  height: 600px;
+  animation: banner 10s infinite linear alternate;
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background-repeat: no-repeat;
+}
+@keyframes banner{
+  0%,20%{
+    background-image:url(/Img/flat-lay-burger-fries-plate.jpg) ;
+  }
+  25%,45%{
+    background-image:url(/Img/happy-waiter-serving-food-group-cheerful-friends-pub.jpg) ;
+  }
+  50%,100%{
+    background-image:url(/Img/mexican-food-still-life.jpg) ;
+  }
+}
+.capa{
+width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background: rgba(141, 76, 76, 0.295);
+}
+.info{
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+.info h2{
+  color: #dee2ff;
+  font-size: 45px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-family: 'Dancing Script', cursive;
+}
+.info .parrafo{
+  color: #feeafa;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.info a{
+  color: #434c5c;
+  text-decoration: none;
+  background-color:#efd3d7 ;
+  padding: 16px 37px;
+  display: inline-block;
+  border-radius: 50px;
+}
+/**M E N U**/
+#menu{
+  padding-top:20px;
+}
+#menu img{
+  height: 250px;
+}
+.texto-menu{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+.botones-menu button{
+  color:#2b2d42;
+  background-color:#efd3d7;
+  padding: 10px;
+  margin-bottom:2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  display: inline-block;
+  flex: 0 0 calc(50%-1rem);
+  padding: 1rem 3rem;
+
+}
+
+.botones-menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.precio{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+
+
+/**G A L E R I A**/
+#galeria{
+  padding: 50px 0px;
+}
+#galeria h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.columna {
+  flex: 15%;
+  max-width: 17%;
+  padding: 0 4px;
+}
+
+.columna img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/**M A P A**/
+#encuentranos h2{
+  color:#2b2d42;
+  font-size: 45px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#encuentranos iframe {
+  width:100%;
+   height:400px;
+   border:none;
+  margin: auto auto;
+    padding: 2%;
+}
+/**C O N T A C T O**/
+#contacto{
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+#contacto h2{
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+#contacto p{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+#contacto a{
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+#contacto a i{
+  margin-right: 10px;
+  color: #8e9aaf;
+}
+#contacto form .campo, textarea{
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid #434c5c;
+margin-bottom: 20px;
+border-radius: 3px;
+outline: 0px;
+}
+#contacto form textarea{
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+#contacto .btn-enviar{
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: #434c5c;
+  color: #dee2ff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+#contacto .btn-enviar:hover{
+  background: #8e9aaf;
+}
+/**F O O T E R**/
+  footer{
+    width: 100%;
+    background-color: #2b2d42;
+  }
+  .pie{
+padding: 10px;
+display: flex;
+justify-content: space-between;
+  }
+  .pie .logo{
+    margin: 10px;
+    color: #feeafa;
+  }
+  .redes h2{
+    color: #efd3d7;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .links{
+    color: #dee2ff;
+    font-size: 1.2rem;
+    line-height: 50px;
+    text-decoration: none;
+  }
+  .icon{
+    font-size: 25px;
+    color: #8e9aaf;
+  background-color:#efd3d7;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 30px;
+  }
+  .icon:hover{
+    background-color: #434c5c;
+  }
+  #Volador{
+   position: fixed;
+   bottom: 10%;
+   right: 5%;
+   z-index: 100;
+   color:#2b2d42;
+   background-color:#fc798d7a;
+   padding: 10px;
+   margin-bottom:2rem;
+   border: none;
+   border-radius: 10px;
+  }
+  /** SOBRE NOSOTROS**/
+ #banner{
+  background-image: url(../Img/empresa.jpg);
+  height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+#nosotros{
+  background-color: #dee2ff;
+}
+ #nosotros h1 {
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 30px;
+ }
+  #nosotros p{
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 50px 50px 30px;
+ }
+
+.valores{
+  background-color: #cbc0d3;
+  display:flex;
+  float: center;
+  align-items: center;
+}
+
+.valores img{
+  object-fit: cover;
+  display: block;
+  width: 523px;
+  height:460px ;
+}
+ .texto{
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+ }
+ .texto h2{
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 5px;
+ }
+  /** R E S P O N S I V E**/
+@media screen and (m-width: 1070px){
+  #inicio header .contenido-header .social{
+    display: none;
+  }
+  #inicio header .contenido-header nav{
+    position: static;
+    transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 700px){
+.botones-menu{
+  display: block;
+}
+.botones-menu button{
+  width: 100%; 
+}
+#galeria .fila .columna{
+  display: block;
+}
+#inicio header .contenido-header nav{
+  position: initial;
+  display: none;
+  transform: translate(0);
+}
+.nav-responsive{
+  display: block;
+}
+#inicio header .contenido-header{
+  padding: 20px;
+}
+#inicio header .contenido-header nav.responsive{
+  display: block;
+  position: absolute;
+  top: 70px;
+left: 0;
+width: 100%;
+height: 100vh;
+background-color: #434c5c;
+z-index: 99;
+}
+nav.responsive ul{
+  display: block !important;
+}
+nav.responsive ul li{
+  border-bottom: 1px solid #cbc0d3;
+  padding: 10px 0;
+}
+
+}
